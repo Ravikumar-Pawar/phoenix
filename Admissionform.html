@@ -69,7 +69,7 @@ a {
 </head>
 <body>
 
-<form action="/submit.php" method="POST">
+<form name="form" method="POST" data-netlify="true">
   <div class="container">
     <h1 style="text-align: center;">Registration Form</h1>
     <p style="color: red;">Please fill your correct details in the below form.</p>
@@ -82,7 +82,7 @@ a {
     <input type="password" placeholder="Enter Father's Name" name="father"  required>
 
     <label for="mother"><b>Mother's Name</b></label>
-    <input type="text" placeholder="Enter Mother Name" name="mother" id="psw" required>
+    <input type="text" placeholder="Enter Mother Name" name="mother" required>
     
     <label for="father"><b>Father's Occupation</b></label>
     <input type="text" placeholder="Enter father Occupation" name="f_occupation"  required>
@@ -98,19 +98,22 @@ a {
     <input type="radio" name="gender" value="female"> Female<br>
     <input type="radio" name="gender" value="other"> Other<br><br>
     
+
+    <label for="class" ><b>Class (Standard)</b></label><br>
+    <input type="text" placeholder="Enter the Std of the student" name="std" required><br><br>
     <label for="medium"><b>Medium</b></label><br>
     <input type="radio" name="medium" value="male">Kannada<br>
     <input type="radio" name="medium" value="female">English<br><br><br>
 
     <label for="school Address"><b>School Name</b></label><br>
-    <textarea name="school name"> 
+    <textarea name="schoolname"> 
       
    
     </textarea><br><br><br>
 
 
-    <label for="school Address"><b>Your Address</b></label><br>
-    <textarea name="school name"> 
+    <label for="Address"><b>Your Address</b></label><br>
+    <textarea name="Address"> 
     Please fill your correct address
     </textarea><br><br>
     <label for="mobile"><b>Mobile Number</b></label><br>
